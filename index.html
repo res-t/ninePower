@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="九次方科技有限公司致力于开发APP">
+    <meta name="keywords" content="App 微信公众号 网站制作 行业解决方案">
+    <title>九次方科技有限公司</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+<style type="text/css">
+	html{
+		height: 100%;
+	}
+	body{
+ 		font-family: '微软雅黑';
+		height: 100%;
+		cursor: pointer;
+ 	}
+ 	h1,h2,h3,h4,h5,h6{
+ 		text-transform: uppercase;
+ 	}
+ 	a,a:hover,a:focus{
+ 		text-decoration:none;
+ 	}
+ 	*{
+ 		padding: 0px;
+ 		margin:0px;
+ 	}
+/*nav start*/
+    #bs-nav{
+    	padding: 20px;
+    	transition: all 0.5s;
+    	user-select:none;
+    }
+	#bs-nav a.navbar-brand{
+		font-size: 20px;
+		color: #fff;
+	}
+ 	#bs-nav.navbar-default{
+		background-color:rgba(248,248,248,0);
+		border-color:rgba(231,231,231,0);
+	}
+	#bs-nav .navbar-right a{
+		letter-spacing: 1px;
+		color: #fff;
+	}
+	#bs-nav .navbar-right a:hover{
+		color: #9A9999;
+	}
+	#bs-nav .navbar-toggle:hover,#bs-nav .navbar-toggle:focus{
+		background-color: #9A9999;
+		border-color: #9A9999;
+	}
+	#bs-nav .navbar-toggle:hover>.icon-bar,#bs-nav .navbar-toggle:focus>.icon-bar{
+		background: #fff;
+	}
+	.on{
+		background-color: #222 !important;
+		color: #fff;
+		padding: 0px !important;
+	}
+/*home page start*/
+ 	#bs-home{
+		height: 100%;
+ 		background:url("img/home.jpg") no-repeat center fixed;
+ 		background-size: cover;
+ 	}
+ 	.overlay{
+		height: 100%;
+		background: -webkit-linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%);
+	    background: -o-linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%);
+	    background: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 );
+ 	}
+ 	#bs-home .content{
+ 		color: #e3e3e3;
+ 		padding-top: 30%;
+ 		user-select:none;
+ 	}
+ 	#bs-home .content h2{
+		letter-spacing: 10px;
+		cursor: pointer;
+ 	}
+ 	#bs-home .content a{
+ 		display: inline-block;
+ 		margin-top: 50px;
+ 		font-size: 12px;
+ 		letter-spacing: 4px;
+ 		padding:10px;
+ 		border: 1px solid #e3e3e3;
+ 		color: #e3e3e3;
+ 		border-radius: 2px;
+ 		transition: all 0.5s;
+ 	}
+ 	#bs-home .content a:hover{
+ 		background: #717171;
+ 		color: #fff;
+ 		border-color: #fff;
+ 	}
+/*profile page start*/
+	#bs-profile{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height: auto;
+	}
+	#bs-profile .head h2{
+		font-size: 24px;
+		letter-spacing: 10px;
+		color: #222;
+		margin-bottom: 5px;
+	}
+	#bs-profile .head p{
+		color: #838383;
+		letter-spacing: 3px;
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	#bs-profile .head hr{
+		background-color: #838383;
+		width: 100px;
+		height: 2px;
+		margin: 0px;
+	}
+	#bs-profile .content{
+		font-size: 16px;
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+	#bs-profile ul li{
+		list-style: none;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	#bs-profile ul li a,#bs-profile ul li p{
+		color: #3A3A3A;
+	}
+	#bs-profile ul li p{
+		line-height: 40px;
+	}
+	#bs-profile  h4,#bs-profile ul li.more a,#bs-profile ul li.more{
+		color: #222;
+		letter-spacing: 1px;
+		padding-bottom: 12px;
+		padding-top: 25px;
+	}
+	#bs-profile ul li a.fa{
+		font-size: 20px;
+		border: 1px solid #3A3A3A;
+		padding: 1px 6px 1px 9px;;
+		border-radius: 50%;
+		transition: all 0.5s;
+	}
+	#bs-profile ul li:hover>a{
+		color: #000;
+	}
+	#bs-profile ul li:hover>a.fa{
+		color: #fff;
+		background: #3A3A3A;
+	}
+/*solution page start*/
+	#bs-solution{
+		height: 100%;
+		background:url("img/profile.jpg") no-repeat center fixed;
+		background-size: cover;
+	}
+	#bs-solution .content{
+		font-size: 16px;
+		letter-spacing: 2px;
+		padding-top: 20%;
+		color: #fff;
+	}
+	#bs-solution .content a{
+		margin-top: 20px;
+		font-size: 30px;
+		color: #000;
+		padding: 5px 13px 5px 18px;
+		background: rgba(255,255,255,1);
+		border: 2px solid rgba(255,255,255,.7);;
+		border-radius: 50%;
+		transition: all 0.5s;
+	}
+	#bs-solution .content a:hover{
+		background: rgba(0,0,0,.7);
+		color: #fff;
+	}
+/*app page start*/
+	#bs-app{
+		padding-top: 45px;
+		padding-bottom: 25px;
+		background:#D5D5D5;
+		overflow-y: hidden;
+	}
+	#bs-app .app{
+		height: 340px;
+		background: url(img/App.jpg) no-repeat center;
+		background-size: cover;
+	}
+	#bs-app .app .content{
+		background: rgba(255,255,255,.2);
+		height: 100%;
+		position: relative;
+		right: 0px;
+		transition: all 0.5s;
+	}
+	#bs-app .app .content:hover{
+		right: -8.333333333333333%;
+	}
+
+	#bs-app .app .content a{
+		color: #fff;
+		font-size: 18px;
+		padding: 3px 16px;
+		letter-spacing: 3px;
+		border: 1px solid #fff;
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		margin-left: -60px;
+	}
+	#bs-app  a span{
+		height: 32px;
+		width: 0px;
+		background: #fff;
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		transition: all 0.8s;
+		overflow: hidden;
+		text-align: center;
+		color: #fff;
+		line-height: 30px;
+	}
+	#bs-app .content a:hover>span{
+		left: 0px;
+		width: 100%;
+		color: #222;
+	}
+	#bs-app .content a:hover{
+		color: transparent;
+	}
+	#bs-app .app .content p{
+		font-size: 16px;
+		color: #fff;
+		padding-right: 5px;
+		position: absolute;
+		top: 65%;
+	}
+	#bs-app .app .content h1{
+		font-size: 34px;
+		color: #fff;
+		position: absolute;
+		letter-spacing: 2px;
+		bottom: 0px;
+	}
+	#bs-app .website{
+		padding: 0px;
+		height: 400px;
+		background: url(img/website.jpg) no-repeat center;
+		background-size: cover;
+		margin-bottom: 20px;
+	}
+	#bs-app .public{
+		padding: 0px;
+		height: 400px;
+		background: url(img/public.jpg) no-repeat center;
+		background-size: cover;
+	}
+	#bs-website{
+		position: relative;
+		padding-top: 20px;
+	}
+	#bs-app .wp .content{
+		height: 130px;
+		width: 100%;
+		background: rgba(255,255,255,.2);
+		position: absolute;
+		bottom: 0px;
+		transition: all 0.5s;
+		padding-left: 7%;
+	}
+	#bs-app .wp .content:hover{
+		height: 150px;
+	}
+	#bs-app .wp .content .row{
+		margin: 0px;
+	}
+	#bs-app .wp .content a{
+		color: #fff;
+		font-size: 18px;
+		padding: 3px 16px;
+		letter-spacing: 3px;
+		border: 1px solid #fff;
+		position: absolute;
+		bottom:15px;
+		right: 20px;
+	}
+	#bs-app .wp .content p{
+		font-size: 16px;
+		color: #fff;
+		position: absolute;
+		top: 20%;
+	}
+	#bs-app .wp .content p.col-md-7{
+		padding-left: 7px;
+	}
+	#bs-app .wp .content h1{
+		font-size: 34px;
+		color: #fff;
+		letter-spacing: 2px;
+		position: absolute;
+		bottom: 5px;
+	}
+	#bs-app .line{
+		width: 2px;
+		height: 400px;
+		background:#D5D5D5;
+		position: absolute;
+		left: 50%;
+		margin-left: 1px;
+	}
+/*search page start*/
+	#bs-search{
+		height: 180px;
+		background: #000;
+		padding-top:50px;
+		padding-bottom: 50px;
+	}
+	#bs-search p{
+		color: #e9e9e9;
+		letter-spacing: 4px;
+	}
+	#bs-search i{
+		color: #e9e9e9;
+		padding: 5px 15px 8px 9px;
+		border: 1px solid #e9e9e9;
+		border-right: none;
+		font-size: 20px;
+	}
+	#bs-search input{
+		width: 58%;
+		height: 35px;
+		outline: none;
+		border: 0px;
+		border: 1px solid #e9e9e9;
+		border-left: 0px;
+		background: transparent;
+		position: relative;
+		left: -4px;
+		color: #e9e9e9;
+	}
+	#bs-search button{
+		font-size: 20px;
+		letter-spacing: 5px;
+		position: relative;
+		left: 20px;
+		width: 12%;
+		height: 35px;
+		outline: none;
+		border: 0px;
+	}
+/*contact page start*/
+   	#bs-contact{
+   		padding-top:60px;
+   	}
+   	@media (min-width: 1200px){
+		#bs-contact .container{
+			width: 970px;
+		}
+   	}
+	#bs-contact head h1{
+		font-size: 34px;
+		margin-bottom: 5px;
+	}
+	#bs-contact head p {
+		color: #222;
+		width: 100px;
+		display: block;
+		border-bottom: 1px solid #222;
+		position: absolute;
+		left: 50%;
+		margin-left: -50px;
+	}
+	#bs-contact  .words{
+		padding: 20px;
+		font-size: 20px;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+
+	#bs-contact .aboutus{
+		padding-top: 70px;
+		padding-bottom: 60px;
+		border: 2px solid rgba(0,0,0,0);
+		transition: all 0.5s;
+	}
+	#bs-contact .aboutus a{
+		font-size: 30px;
+		padding: 20px 25px 20px 25px;
+		border-radius: 50%;
+		border: 1px solid #222;
+		transition: all 1s;
+		color: #222;
+	}
+	#bs-contact .aboutus p{
+		margin-top: 12px;
+	}
+	#bs-contact .aboutus a:hover{
+		color: #fff;
+		background-color: rgba(0,0,0,.8);
+	}
+	#bs-contact .left li{
+		list-style: none;
+		margin-top: 20px;
+	}
+	#bs-contact .left li input{
+		width: 100%;
+		height: 35px;
+		outline: none;
+		border: 1px solid #9e9494;
+		padding-left: 15px;
+	}
+
+	#bs-contact .right textarea{
+		height: 150px;
+		width: 100%;
+		margin-top: 20px;
+		outline: none;
+		padding-left: 5px;
+		border: 1px solid #9e9494;
+	}
+	#bs-contact button{
+		width: 100%;
+		height: 35px;
+		background: #222;
+		color: #ddd;
+		border: 0px;
+		outline: none;
+		font-size: 18px;
+		letter-spacing: 5px;
+		margin-top: 15px;
+		transition: all 0.5s;
+	}
+	#bs-contact button:hover{
+		background: rgba(0,0,0,.8);
+		color: #fff;
+	}
+/*foot page start*/
+	footer{
+		background: #000;
+		height: 260px;
+		margin-top: 90px;
+		color: #ddd;
+		padding-top: 30px;
+	}
+	footer p,footer div.row{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	footer  p a.fa{
+		margin:0px 15px;
+		font-size: 20px;
+		color: #ddd;
+	}
+	footer  p a.fa:hover{
+		color: #fff;
+	}
+	footer  p  span{
+		margin:0px 20px;
+	}
+@media (max-width: 998px){
+	#bs-contact  .words{
+		text-align: center;
+		font-size: 16px;
+		letter-spacing: 0px;
+	}
+	#bs-app .app .content:hover{
+			right: -16.6666666666%;
+	}
+	#bs-home .content{
+		padding-top: 40%;
+	}
+	#bs-solution .content{
+		padding-top: 30%;
+	}
+}
+@media (max-width: 766px){
+	.navbar-default{
+		background-color: #222 !important;
+	}
+}
+@media (max-width: 700px){
+	#bs-search button{
+		font-size: 16px;
+		width: 20%;
+		left: 10px;
+		letter-spacing: 3px;
+	}
+	#bs-contact  .words{
+		font-size: 14px;
+	}
+	#bs-app .website,#bs-app .public,#bs-app .app{
+		height: 300px;
+	}
+	#bs-app .app .content p{
+		font-size: 14px;
+	}
+	#bs-home .content{
+		padding-top: 50%;
+	}
+	#bs-solution .content{
+		padding-top: 50%;
+	}
+}
+@media (max-width: 400px){
+	#bs-app .app .content p{
+		top: 56%;
+	}
+	#bs-home .content h2{
+		letter-spacing: 3px;
+		font-size: 28px;
+	}
+	#bs-app .app .content h1,#bs-app .wp .content h1{
+		font-size: 28px;
+	}
+	#bs-home .content{
+		padding-top: 60%;
+	}
+	#bs-solution .content{
+		padding-top: 70%;
+	}
+}
+</style>
+</head>
+<body>
+<!-- nav page start -->
+<nav id="bs-nav" class="nav navbar-default navbar-fixed-top" >
+	<div class="container">
+		<div class="navbar-header" >
+			<button class="navbar-toggle" data-toggle='collapse' data-target='#navbar-collapse'>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#bs-home" class="navbar-brand page-scroll">B E S T  9</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a class="page-scroll" href="#bs-home">首页</a></li>
+				<li><a class="page-scroll" href="#bs-profile">公司简介</a></li>
+				<li><a class="page-scroll" href="#bs-solution">解决方案</a></li>
+				<li><a class="page-scroll" href="#bs-app">APP开发</a></li>
+				<li><a class="page-scroll" href="#bs-website">网站制作</a></li>
+				<li><a class="page-scroll" href="#bs-public">微信公众号</a></li>
+				<li><a class="page-scroll" href="#bs-contact">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- end nav page -->
+<!-- home page start -->
+<div id="bs-home">
+	<div class="overlay">
+		<div class="content text-center">
+			<h2>千里之行，始于足下</h2>
+			<a href='#bs-profile' class="page-scroll">关于我们</a>
+		</div>
+	</div>
+</div>
+<!-- end home page -->
+<!-- frofile page start -->
+<div id="bs-profile">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6 head col-md-offset-2">
+				<h2>公司简介</h2>
+				<p>顾客满意，是我们最大的目标</p>
+				<hr>
+			</div>
+		</div>
+		<div class="row content">
+			<div class="col-md-3 col-sm-6">
+				<h4>九次方科技有限公司</h4>
+				<p>四川省九次方科技有限公司成立于2016年4月21日，主要提供：</p>
+				<ul>
+					<li>
+						<a href="" class="fa fa-angle-right"></a>
+						<a href="">软件设计与制作</a>
+					</li>
+					<li>
+						<a href="" class="fa fa-angle-right"></a>
+						<a href="">软件设计与制作</a>
+					</li>
+					<li>
+						<a href="" class="fa fa-angle-right"></a>
+						<a href="">软件设计与制作</a>
+					</li>
+					<li>
+						<a href="" class="fa fa-angle-right"></a>
+						<a href="">软件设计与制作</a>
+					</li>
+					<li class="more">
+						<a href="">更多服务...</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-9 col-sm-12 pic">
+				<img style="width: 100%;" src="img/profile.jpg" alt="" class="img-responsive">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end home profile -->
+<!-- solution page start -->
+<div id="bs-solution">
+	<div class="overlay">
+		<div class="content text-center" >
+			<p>关于我们</p>
+			<a href="" class=" fa fa-caret-right"></a>
+		</div>
+	</div>
+</div>
+<!-- end home solution -->
+<!-- app page start -->
+<div id="bs-app">
+	<div class="container">
+		<div class="row app">
+			<div class="col-md-3 col-md-offset-8 col-sm-5 col-sm-offset-5 col-xs-7 col-xs-offset-3 content">
+				<a href=""><span>了解更多</span>了解更多</a>
+				<p>一流的产品，一流的保证,以产品品质领先于行业，创造新高度。</p>
+				<h1>APP开发</h1>
+			</div>
+		</div>
+		<div id="bs-website" class="row wp">
+			<div class="col-md-6 website">
+				<div class="content">
+					<div class="row">
+						<p class="col-md-7  ">一流的产品，一流的保证,以产品品质领先于行业，创造新高度。</p>
+					</div>
+					<h1>网站制作</h1>
+					<a href=""><span>了解更多</span>了解更多</a>
+				</div>
+			</div>
+			<div id="bs-public">
+			<div class="col-md-6 public">
+				<div class="content">
+					<div class="row">
+						<p class="col-md-7  col-sm-11 ">一流的产品，一流的保证,以产品品质领先于行业，创造新高度。</p>
+					</div>
+					<h1>微信公众号</h1>
+					<a href=""><span>了解更多</span>了解更多</a>
+				</div>
+			</div>
+			</div>
+			<div class="line"></div>
+		</div>
+	</div>
+</div>
+<!-- end home app -->
+<!-- search page start -->
+<div id="bs-search">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-2"><p>想知道更多?<p></div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-2">
+				<i class=" fa fa-search"></i>
+				<input type="" name="" placeholder="在此搜索">
+				<button>搜索</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end search page -->
+<!-- contact page start -->
+<div id="bs-contact">
+	<div class="container">
+		<div class="head text-center">
+			<h2>联系我们</h2>
+			<p>Contact us</p>
+		</div>
+		<div class="words">
+			我们愿景宏大，我们志向高远。我们正急需优秀人才，与我们一起开创更美好的未来。
+		</div>
+		<div class="row text-center">
+			<div class="col-md-4">
+				<div class="aboutus">
+					<a href="" class="fa fa-desktop "></a>
+					<p>best9.com</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="aboutus">
+					<a href="" class="fa fa-home"></a>
+					<p>四川省绵阳市涪城区西南科技大学科技园东九b543</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="aboutus">
+					<a href="" class=" fa fa-phone"></a>
+					<p>+000 - 123 - 456 - 789</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5 col-md-offset-1 left">
+				<ul>
+					<li><input type="" name="" placeholder="主题"></li>
+					<li><input type="" name="" placeholder="姓名"></li>
+					<li><input type="" name="" placeholder="邮箱"></li>
+				</ul>
+			</div>
+			<div class="col-md-5 right">
+					<textarea placeholder="请在此输入信息......"></textarea>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 col-sm-offset-9">
+				<button>提交</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end home contact -->
+<footer>
+	<div class="container text-center">
+		<p>B EＳT  ９</p>
+		<p>
+			<a href="" class="fa fa-weixin"></a>
+			<a href="" class="fa fa-weibo"></a>
+			<a href="" class="fa fa-qq"></a>
+		</p>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-2 col-sm-12">Copyright@ 1994-2016www.jiucifang.com . All Rights Reserved</div>
+			<div class="col-md-2 col-sm-12">川ICP备05015666</div>
+		</div>
+	</div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/smoothscroll/1.4.6/SmoothScroll.js"></script>
+<script type="text/javascript">
+// navbar page start
+	$(window).bind("scroll",function(){
+		var navHeight = $(window).height()-100;
+		var scrollTop = $(window).scrollTop();
+		if(scrollTop>navHeight){
+			$('.navbar-default').addClass('on');
+		}else{
+			$('.navbar-default').removeClass('on');
+		}
+	});
+	$('a.page-scroll').click(function(){
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+	        var target = $(this.hash);
+	        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	        if (target.length) {
+	            $('html,body').animate({
+	                scrollTop: target.offset().top - 40
+	            }, 900);
+	            return false;
+	        }
+	    }
+	});
+//end  navbar page
+
+</script>
+</body>
+</html>
+
